@@ -1,0 +1,189 @@
+.IonApp.block-horizontal {
+  @media screen and (orientation: landscape) {
+    overflow: hidden;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    position: fixed;
+    top: 100%;
+    left: 0;
+  }
+}
+
+
+
+.calculadora {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 24px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 93%;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+.calculator-button {
+  background-color: #999999;
+  color: #FFFFFF;
+  width: 100px;
+  height: 33px;
+  border-radius: 8px;
+}
+
+
+.header {
+  width: 100%;
+  height: 110px;
+  background-color: #163654;
+  color: white;
+  font-size: 40px;
+  padding: 10px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-button.active {
+  background-color: #707070;
+  color: #FFFFFF;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+  width: 300px;
+}
+
+.input-wrapper ion-input {
+  --background: #DBDBDB;
+  --border-radius: 15px;
+  --width: 10px;
+  --height: 10px;
+}
+
+
+
+.input-wrapper .placeholder {
+  color: #9F9F9F;
+  font-family: 'GOTHIC';
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+.tipo {
+  color: #9F9F9F;
+  font-family: 'GOTHICB';
+  font-size: 24px;
+}
+
+.custom-button {
+  background-color: #DBDBDB;
+  color: #707070;
+  font-family: 'GOTHICB';
+  align-items: center;
+  border-radius: 15px;
+  font-size: 12px;
+  width: 100px;
+  height: 30px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.resultado {
+  background-color: #DBDBDB;
+  color: #707070;
+  font-family: 'GOTHICB';
+  align-items: center;
+  border-radius: 15px;
+  font-size: 20px;
+  width: 200px;
+  height: 45px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-input {
+  font-size: 20px;
+  --border-style: none;
+  --highlight-color-focused: transparent;
+  --highlight-color-invalid: transparent;
+  --highlight-color-valid: transparent;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #193556;
+  /* Adjust the background color as needed */
+}
+
+
+.loading-screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.footer {
+  background-color: #163654;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+}
+.footer-content{
+  position: absolute;
+  bottom: 0; /* Position the element at the bottom of the container */
+  left: 0; /* Adjust the horizontal positioning as needed */
+  width: 100%; /* Set the width to fill the container */
+}
+.wha{
+  width: 130px;
+  position: relative;
+  right: 15%;
+}
+.webs {
+  position: relative;
+  left: 12%;
+  width: 130px;
+}
+
+.linkWha, .link-button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
